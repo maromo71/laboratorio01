@@ -1,0 +1,5 @@
+aula1508
+images
+LICENSE.txt
+meu_arquito.txt
+README.md

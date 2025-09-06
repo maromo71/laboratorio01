@@ -21,7 +21,7 @@ public class FileDirectoryApp {
             System.out.println("Caminho: " + path.toAbsolutePath());
             //Leitura do texto dentro do arquivo
             //System.out.println(Files.readString(path));
-            //Fechar o arquivo
+            //Fechar o arquivo (falta)
             
             DirectoryStream<Path> pathStream = Files.newDirectoryStream(path);
             for(Path item : pathStream){

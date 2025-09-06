@@ -23,6 +23,8 @@ public class LeitorImagem extends JFrame {
 
         labelImagem = new JLabel("Nenhuma imagem carregada...");
         labelImagem.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        labelImagem.setHorizontalAlignment(JLabel.CENTER);
+        labelImagem.setVerticalAlignment(JLabel.CENTER);
         add(labelImagem, BorderLayout.CENTER);
 
         JPanel painelBotoes = new JPanel();

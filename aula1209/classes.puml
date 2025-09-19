@@ -1,0 +1,23 @@
+@startuml
+
+package br.santalucia
+
+class Carro {
+    - marca: String 
+    - modelo: String 
+    - cor: String 
+    - ano: Int 
+}
+
+class Cliente {
+    - codigo: Int 
+    - nome: String 
+    - telefone: String 
+    - email: String 
+    - carros: List<Carro>
+}
+
+
+
+
+@enduml

@@ -1,0 +1,24 @@
+@startuml
+' Define a classe Cliente com seus atributos inferidos
+class Cliente {
+ nome: String
+ email: String
+ telefone: String
+
+ Cliente(nome: String, email: String, telefone: String)
+ getNome(): String
+ getEmail(): String
+ getTelefone(): String
+}
+
+' Define a classe SistemaCadastroClientes com seus métodos
+class SistemaCadastroClientes {
+ {static} main(args: String\[\]): void
+ {static} persistirCliente(cliente: Cliente): boolean
+ {static} validarEmail(email: String): boolean
+ {static} formatarNome(nome: String): String
+}
+' Define a relação de dependência
+' SistemaCadastroClientes usa a classe Cliente
+SistemaCadastroClientes ..> Cliente : usa
+@enduml

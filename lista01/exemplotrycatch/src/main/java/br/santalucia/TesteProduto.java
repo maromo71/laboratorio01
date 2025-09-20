@@ -8,7 +8,7 @@ public class TesteProduto {
         try{
             p.registrarEntrada(500);
             //Tente executar com um valor maior que 500.
-            p.registrarSaida(501);
+            p.registrarSaida(498);
             //Repita a execução mudando para um valor menor que 500.
         }catch(Exception ex){
             System.out.println("Erro: " + ex.getMessage());

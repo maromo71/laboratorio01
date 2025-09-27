@@ -12,8 +12,8 @@ public class Produto {
         this.preco = preco;
         this.estoque = estoque;
     }
+    // Getters e setters
 
-    // Getters e Setters
     public long getId() {
         return id;
     }
@@ -48,6 +48,7 @@ public class Produto {
 
     @Override
     public String toString() {
-        return "Produto{" + "id=" + id + ", nome='" + nome + '\'' + ", preco=" + preco + ", estoque=" + estoque + '}';
+        return "Produto [id=" + id + ", nome=" + nome + ", preco=" + preco + ", estoque=" + estoque + "]";
     }
+    
 }

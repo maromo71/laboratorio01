@@ -1,4 +1,2 @@
-Buscar Pano
-Buscar farinha
-Estudar Java
-Buscar Pao
+Estudar Engenharia de Software
+Buscar Filho

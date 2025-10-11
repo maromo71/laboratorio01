@@ -1,0 +1,63 @@
+@startuml
+skinparam ClassAttributeIconStyle visibility
+
+' ====================================================================
+' ENUMS (Tipos de dados para Naipe e Valor)
+' ====================================================================
+
+enum Naipe {
+  + OUROS
+  + COPAS
+  + ESPADAS
+  + PAUS
+  --
+  // Valores inferidos
+}
+
+enum Valor {
+  + AS
+  + DOIS
+  + TRES
+  ...
+  + DAMA
+  + REI
+  --
+  // Valores inferidos
+}
+
+' ====================================================================
+' CLASSE CARTA (Inferida pelo uso em Baralho)
+' ====================================================================
+
+class Carta {
+  - Naipe naipe
+  - Valor valor
+  + Carta(naipe: Naipe, valor: Valor)
+  + toString(): String
+}
+
+' ====================================================================
+' CLASSE BARALHO (Fornecida no código)
+' ====================================================================
+
+class Baralho {
+  - List<Carta> cartas
+  --
+  + Baralho()
+  + toString(): String
+  + embaralhar(): void
+  + retirarCarta(): Carta
+}
+
+' ====================================================================
+' RELACIONAMENTOS
+' ====================================================================
+
+' Baralho contém 52 Cartas (Composição Forte)
+Baralho "1" *-- "52" Carta : contém
+
+' Carta tem 1 Naipe e 1 Valor
+Carta "1" *-- "1" Naipe : tem
+Carta "1" *-- "1" Valor : tem
+
+@enduml
